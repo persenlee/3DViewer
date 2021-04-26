@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cSb-IS-Mei">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="su3-Hf-Yi5">
+            <objects>
+                <viewController id="cSb-IS-Mei" customClass="ViewController" customModule="_DViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pIK-LW-TR3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dm6-sG-FWL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="337"/>
+                            </sceneKitView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jb-lF-cgV">
+                                <rect key="frame" x="0.0" y="381" width="414" height="481"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥1999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oR6-da-Vfg">
+                                        <rect key="frame" x="20" y="74" width="374" height="42"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="MUSKEN 慕斯肯" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jE-aS-KM6">
+                                        <rect key="frame" x="20" y="25" width="243.5" height="39"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这款床边桌轻巧，利落，时尚，虽然身量小，空间令人惊喜。适合放在床头位置，你可以把书，水杯放在上面，伸手就能够着" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eK-Vf-k4I">
+                                        <rect key="frame" x="20" y="136" width="374" height="70.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EZp-3g-gee">
+                                        <rect key="frame" x="349" y="0.0" width="65" height="116"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHS-ze-ztP">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="29"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Basic">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="switchSurface:" destination="cSb-IS-Mei" eventType="touchUpInside" id="mWH-5c-SEX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHb-B4-g4V">
+                                                <rect key="frame" x="0.0" y="29" width="65" height="29"/>
+                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="switchSurface:" destination="cSb-IS-Mei" eventType="touchUpInside" id="DaY-zd-65g"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agP-gc-aqf">
+                                                <rect key="frame" x="0.0" y="58" width="65" height="29"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Height">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="switchSurface:" destination="cSb-IS-Mei" eventType="touchUpInside" id="Kiw-uK-kWl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMT-YQ-uJu">
+                                                <rect key="frame" x="0.0" y="87" width="65" height="29"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Roughnes">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="switchSurface:" destination="cSb-IS-Mei" eventType="touchUpInside" id="l5f-iY-oKz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oR6-da-Vfg" secondAttribute="trailing" constant="20" id="IZT-Tq-Grp"/>
+                                    <constraint firstItem="oR6-da-Vfg" firstAttribute="leading" secondItem="4jb-lF-cgV" secondAttribute="leading" constant="20" id="LpB-si-E2a"/>
+                                    <constraint firstItem="9jE-aS-KM6" firstAttribute="top" secondItem="4jb-lF-cgV" secondAttribute="top" constant="25" id="Seq-Sb-EUR"/>
+                                    <constraint firstAttribute="trailing" secondItem="EZp-3g-gee" secondAttribute="trailing" id="SqD-EZ-KHD"/>
+                                    <constraint firstItem="0eK-Vf-k4I" firstAttribute="leading" secondItem="4jb-lF-cgV" secondAttribute="leading" constant="20" id="StU-Qe-OBH"/>
+                                    <constraint firstItem="9jE-aS-KM6" firstAttribute="leading" secondItem="4jb-lF-cgV" secondAttribute="leading" constant="20" id="Vsu-Hz-zh5"/>
+                                    <constraint firstItem="0eK-Vf-k4I" firstAttribute="top" secondItem="oR6-da-Vfg" secondAttribute="bottom" constant="20" id="eSC-Za-1rm"/>
+                                    <constraint firstItem="oR6-da-Vfg" firstAttribute="top" secondItem="9jE-aS-KM6" secondAttribute="bottom" constant="10" id="fTO-w1-72B"/>
+                                    <constraint firstItem="EZp-3g-gee" firstAttribute="top" secondItem="4jb-lF-cgV" secondAttribute="top" id="oz1-la-S33"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9jE-aS-KM6" secondAttribute="trailing" constant="20" symbolic="YES" id="rDO-rc-gus"/>
+                                    <constraint firstAttribute="trailing" secondItem="0eK-Vf-k4I" secondAttribute="trailing" constant="20" id="rEW-tO-I1l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w19-w1-ugD"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w19-w1-ugD" firstAttribute="trailing" secondItem="4jb-lF-cgV" secondAttribute="trailing" id="CQ0-eX-GPb"/>
+                            <constraint firstItem="Dm6-sG-FWL" firstAttribute="leading" secondItem="w19-w1-ugD" secondAttribute="leading" id="CV2-Si-dIc"/>
+                            <constraint firstItem="4jb-lF-cgV" firstAttribute="width" secondItem="Dm6-sG-FWL" secondAttribute="width" id="HQZ-oE-kFA"/>
+                            <constraint firstItem="Dm6-sG-FWL" firstAttribute="trailing" secondItem="w19-w1-ugD" secondAttribute="trailing" id="Wps-RN-wai"/>
+                            <constraint firstItem="Dm6-sG-FWL" firstAttribute="top" secondItem="w19-w1-ugD" secondAttribute="top" id="Xsr-C0-QZ0"/>
+                            <constraint firstItem="w19-w1-ugD" firstAttribute="bottom" secondItem="4jb-lF-cgV" secondAttribute="bottom" id="eAm-Db-18x"/>
+                            <constraint firstItem="4jb-lF-cgV" firstAttribute="top" secondItem="Dm6-sG-FWL" secondAttribute="bottom" id="eU6-FW-0eh"/>
+                            <constraint firstItem="4jb-lF-cgV" firstAttribute="top" secondItem="Dm6-sG-FWL" secondAttribute="bottom" id="kmz-1A-jAD"/>
+                            <constraint firstItem="4jb-lF-cgV" firstAttribute="height" secondItem="Dm6-sG-FWL" secondAttribute="height" multiplier="10:7" id="mhT-TV-ZWG"/>
+                            <constraint firstItem="4jb-lF-cgV" firstAttribute="leading" secondItem="w19-w1-ugD" secondAttribute="leading" id="sTv-3N-o1j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="Dm6-sG-FWL" id="CIK-6w-vBp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yv2-m3-6zp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
